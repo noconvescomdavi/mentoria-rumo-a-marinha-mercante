@@ -37,6 +37,15 @@ window.$RefreshSig$ = () => (type) => type;</script>
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;};
   
+  @media (max-width: 768px) {
+  iframe {
+    height: 380px;
+  }
+@media (max-width: 768px) {
+  video {
+    height: 360px;
+  }
+}
   
 }
 }.titulo-mentoria {
@@ -3962,23 +3971,24 @@ video {
     <div class="absolute -inset-4 bg-gradient-to-r from-orange-500/20 to-blue-500/20 rounded-3xl blur-2xl"></div>
 
     <div class="relative rounded-2xl overflow-hidden border border-white/10">
-
-      <!-- PRIMEIRA IMAGEM — SEM LINK -->
-      <img 
-        src="https://github.com/noconvescomdavi/mentoria-rumo-a-marinha-mercante/blob/main/IMG_0063.png?raw=true" 
-        alt="Marinha Mercante" 
-        class="w-full h-[500px] object-cover"
-      >
-
-      <div class="absolute inset-0 bg-gradient-to-t from-[#0A1628] via-transparent to-transparent"></div>
-    </div>
-
-    <!-- SEGUNDA IMAGEM — COM LINK DO INSTAGRAM -->
-    <a 
-      href="https://www.instagram.com/noconvescomdavi/" 
-      target="_blank" 
-      rel="noopener noreferrer"
+<div class="relative">
+  <video
+    class="w-full h-[500px] object-cover"
+    autoplay
+    muted
+    loop
+    controls
+    playsinline
+  >
+    <source 
+      src="https://raw.githubusercontent.com/SEU_USUARIO/SEU_REPOSITORIO/main/seu-video.mp4" 
+      type="video/mp4"
     >
+  </video>
+
+  <div class="absolute inset-0 bg-gradient-to-t from-[#0A1628]/60 via-transparent to-transparent pointer-events-none"></div>
+</div>
+   
       <img 
         src="https://raw.githubusercontent.com/noconvescomdavi/mentoria-rumo-a-marinha-mercante/refs/heads/main/Lower-Third-PNG-Isolated-Image.png" 
         alt="Instagram @noconvescomdavi - Contramestre Davi" 
@@ -4009,4 +4019,5 @@ video {
   });
 </script>
 
+<script async src="https://www.instagram.com/embed.js"></script>
 </body></html>
